@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <h1>HTML Canvas</h1>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello, Samuel Parente!", 10, 50);
+    </script>
+</body>
+</html>

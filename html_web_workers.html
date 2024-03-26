@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Web Workers</title>
+    <script>
+        var worker = new Worker("worker.js");
+        worker.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    </script>
+</head>
+<body>
+    <h1>HTML Web Workers</h1>
+    <button onclick="worker.postMessage('Hello')">Start Worker</button>
+    <p id="result"></p>
+</body>
+</html>
